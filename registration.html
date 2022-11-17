@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Yernur</title>
+    <style>
+      h1, legend {
+        text-align: center;
+      }
+      form{
+        width: 360px;
+        margin: 0 auto;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Registration form</h1>
+    </header>
+    <main>
+      <section>
+        <form action="login.html" method="get">
+          <fieldset>
+            <legend>
+              <h3>Information for Registration</h3>
+            </legend>
+
+            <!-- TEXT -->
+            <label for="name">Name</label>
+            <input type="text" name="name" id="name" required />
+            <br />
+            <br />
+
+            <!-- EMAIL -->
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" required />
+            <br />
+            <br />
+
+            <!-- PASSWORD -->
+            <label for="">Password</label>
+            <input type="password" name="password" id="password" required />
+            <br />
+            <br />
+
+            <label for="">Confirm password</label>
+            <input
+              type="password"
+              name="confirmPassword"
+              id="confirmPassword"
+              required
+            />
+          </fieldset>
+
+          <fieldset>
+            <legend>
+              <h3>Additional Information</h3>
+            </legend>
+
+            <!-- TEL -->
+            <label for="phoneNumber">Mobile Phone</label>
+            <input type="tel" name="phoneNumber" id="phoneNumber" />
+            <br />
+            <br />
+
+            <!-- DATE -->
+            <label for="date">Birth Date</label>
+            <input type="date" name="date" id="date" value="2022-11-10" />
+          </fieldset>
+
+          <fieldset>
+            <legend>
+              <h3>Why are you ...?</h3>
+            </legend>
+
+            <!-- RADIO -->
+            <label for="gay">Gay</label>
+            <input type="radio" name="meme" id="gay" value="gay" />
+
+            <label for="running">Running</label>
+            <input type="radio" name="meme" id="running" value="running" />
+          </fieldset>
+
+          <fieldset>
+            <legend>
+              <h3>What languages do you know?</h3>
+            </legend>
+
+            <!-- CHECKBOX -->
+            <label for="kazakh">Kazakh</label>
+            <input
+              type="checkbox"
+              name="languages"
+              id="kazakh"
+              value="kazakh"
+            />
+
+            <label for="russian">Russian</label>
+            <input
+              type="checkbox"
+              name="languages"
+              id="russian"
+              value="russian"
+            />
+
+            <label for="english">English</label>
+            <input
+              type="checkbox"
+              name="languages"
+              id="english"
+              value="english"
+            />
+          </fieldset>
+          <br />
+
+          <button type="submit">Зарегистрироваться</button>
+        </form>
+      </section>
+    </main>
+  </body>
+</html>
